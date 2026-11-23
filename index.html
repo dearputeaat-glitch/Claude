@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>SIMKARI — Prototype</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ============ U1 · LOGIN ============ -->
+<section class="screen is-active" id="login" data-screen="login">
+  <div class="u1-frame">
+    <div class="u1-left">
+      <img class="abs" style="left:-100px;top:656px;width:360px;height:360px" src="assets/ell-0.svg" alt="">
+      <img class="abs" style="left:-190px;top:566px;width:540px;height:540px" src="assets/ell-1.svg" alt="">
+      <img class="abs" style="left:-280px;top:476px;width:720px;height:720px" src="assets/ell-2.svg" alt="">
+      <img class="abs" style="left:-370px;top:386px;width:900px;height:900px" src="assets/ell-3.svg" alt="">
+      <div class="abs" style="left:380px;top:-140px;width:480px;height:480px"><img class="inset-neg" style="inset:-31.25%" src="assets/ell-4.svg" alt=""></div>
+      <div class="u1-content">
+        <div class="brand-dark">
+          <div class="brand-mark">S</div>
+          <div class="brand-txt"><b>SIMKARI</b><span>Portal Integrasi Aplikasi</span></div>
+        </div>
+        <div class="u1-hero-copy">
+          <p class="eyebrow-w">AKSES INTERNAL</p>
+          <h1>Satu pintu untuk aplikasi kerja SIMKARI.</h1>
+          <p class="lead-w">Gunakan akun instansi yang sudah terdaftar. Tidak ada pendaftaran mandiri.</p>
+        </div>
+        <div class="flex1"></div>
+        <div class="u1-note">
+          <img src="assets/icon-info-light.svg" width="16" height="16" alt="">
+          <p>Portal ini khusus integrasi sistem antar-aplikasi. Untuk akses akun pengguna SIMKARI, gunakan Permohonan Akses.</p>
+        </div>
+      </div>
+    </div>
+    <form class="u1-right" id="login-form" autocomplete="off">
+      <div class="u1-top"><span class="muted13">Belum terdaftar?</span><a class="link13" href="#" onclick="return false">Daftarkan instansi</a></div>
+      <div class="flex1"></div>
+      <div class="u1-form">
+        <h2>Masuk ke Portal Integrasi</h2>
+        <p class="sub14">Gunakan akun pemohon instansi yang telah terverifikasi.</p>
+        <div class="gap4"></div>
+        <label class="field"><span class="lbl">Masukan NIP/Nama Pengguna <i>*</i></span><input type="text" value="andi.pratama@kejaksaan.go.id"></label>
+        <label class="field"><span class="lbl">Kata sandi <i>*</i></span><input type="password" id="pw" value="••••••••••••" autofocus></label>
+        <div class="remember">
+          <label class="chk"><input type="checkbox" checked><span class="box"><img src="assets/icon-check-sm.svg" width="12" height="12" alt=""></span><span>Ingat saya di perangkat ini</span></label>
+          <a class="link13" href="#" onclick="return false">Lupa kata sandi?</a>
+        </div>
+        <button type="submit" class="btn-primary">Masuk <img src="assets/arrow-right-white.svg" width="16" height="16" alt=""></button>
+        <div class="or"><span></span><em>atau</em><span></span></div>
+        <a class="btn-sso" href="#" data-go="portal"><img src="assets/icon-shield.svg" width="16" height="16" alt=""> Masuk dengan SSO Instansi</a>
+      </div>
+      <div class="flex1"></div>
+      <div class="u1-foot"><b>Panduan Integrasi</b><span>Kebijakan Privasi</span><div class="flex1"></div><em>© 2026 SIMKARI</em></div>
+    </form>
+  </div>
+</section>
+
+<!-- ============ U2 · SSO ============ -->
+<section class="screen" id="sso" data-screen="sso">
+  <div class="u2-frame">
+    <img class="abs" style="left:-100px;top:656px;width:360px;height:360px" src="assets/ell-0.svg" alt="">
+    <img class="abs" style="left:-190px;top:566px;width:540px;height:540px" src="assets/ell-1.svg" alt="">
+    <img class="abs" style="left:-280px;top:476px;width:720px;height:720px" src="assets/ell-2.svg" alt="">
+    <img class="abs" style="left:-370px;top:386px;width:900px;height:900px" src="assets/ell-3.svg" alt="">
+    <div class="abs" style="left:380px;top:-140px;width:480px;height:480px"><img class="inset-neg" style="inset:-31.25%" src="assets/ell-4.svg" alt=""></div>
+    <div class="u2-brand brand-dark">
+      <div class="brand-mark">S</div>
+      <div class="brand-txt"><b>SIMKARI</b><span>Portal Integrasi Aplikasi</span></div>
+    </div>
+    <div class="sso-card">
+      <div class="sso-handoff">
+        <div class="sso-logo"><div class="sso-s">S</div></div>
+        <div class="sso-dots"><img class="d1" src="assets/dot-1.svg" alt=""><img class="d2" src="assets/dot-2.svg" alt=""><img class="d3" src="assets/dot-3.svg" alt=""></div>
+        <div class="sso-logo"><div class="jdih-logo"><img class="jg" src="assets/jdih-globe.svg" alt=""><div class="jw"><img src="assets/jdih-wordmark.svg" alt=""></div></div></div>
+      </div>
+      <p class="sso-eyebrow">SINGLE SIGN-ON</p>
+      <h2 class="sso-title">Menghubungkan ke JDIH</h2>
+      <p class="sso-sub">Anda masuk melalui Layanan Identitas SIMKARI. Tidak perlu login ulang.</p>
+      <div class="sso-steps">
+        <div class="sso-step" data-i="1"><span class="sso-check"><img src="assets/icon-check-white.svg" width="11" height="11" alt=""></span><div><b>Memvalidasi sesi SIMKARI</b><span>Sesi aktif · Dimas Prasetyo, Analis Hukum</span></div></div>
+        <div class="sso-step" data-i="2"><span class="sso-check"><img src="assets/icon-check-white.svg" width="11" height="11" alt=""></span><div><b>Menerbitkan token SSO</b><span>Token sekali pakai · berlaku 60 detik</span></div></div>
+        <div class="sso-step" data-i="3"><span class="sso-check"><img src="assets/icon-check-white.svg" width="11" height="11" alt=""></span><div><b>Menyerahkan identitas ke JDIH Management</b><span>Peran dan hak akses diteruskan</span></div></div>
+      </div>
+      <div class="sso-track"><div class="sso-fill"></div></div>
+      <a class="sso-cancel" href="#" data-go="portal">Batalkan dan kembali ke portal</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ U3 · PORTAL ============ -->
+<section class="screen" id="portal" data-screen="portal">
+  <div class="u3">
+    <aside class="sidebar">
+      <div class="sb-brand"><div class="sb-mark">S</div><div class="sb-bt"><b>SIMKARI</b><span>Portal Aplikasi</span></div></div>
+      <div class="role"><div class="role-t"><em>PERAN AKTIF</em><b>Analis Hukum · Biro Hukum</b></div><img src="assets/sb-chevrons.svg" width="14" height="14" alt=""></div>
+      <div class="sb-h">OVERVIEW</div>
+      <a class="nav active" href="#"><img src="assets/sb-dashboard.svg" alt=""><span>Beranda</span></a>
+      <div class="sb-h">APLIKASI</div>
+      <a class="nav" href="#"><img src="assets/sb-apps.svg" alt=""><span>Aplikasi Saya</span><i class="cnt">6</i></a>
+      <a class="nav" href="#"><img src="assets/sb-star.svg" alt=""><span>Favorit</span></a>
+      <a class="nav" href="#"><img src="assets/sb-clock.svg" alt=""><span>Terakhir Diakses</span></a>
+      <a class="nav" href="#"><img src="assets/sb-layers.svg" alt=""><span>Katalog Aplikasi</span></a>
+      <a class="nav" href="#"><img src="assets/sb-send.svg" alt=""><span>Permohonan Akses</span><i class="cnt">1</i></a>
+      <div class="sb-h">AKUN</div>
+      <a class="nav" href="#"><img src="assets/sb-bell.svg" alt=""><span>Notifikasi</span><i class="cnt">3</i></a>
+      <a class="nav" href="#"><img src="assets/sb-lock.svg" alt=""><span>Keamanan akun</span></a>
+      <a class="nav" href="#"><img src="assets/sb-help.svg" alt=""><span>Bantuan</span></a>
+      <div class="flex1"></div>
+      <div class="sb-help"><em>PUSAT BANTUAN</em><p>Tidak menemukan aplikasi yang Anda butuhkan? Ajukan akses lewat Katalog Aplikasi.</p></div>
+      <div style="height:10px"></div>
+      <div class="sb-div"></div>
+      <div style="height:6px"></div>
+      <a class="nav" href="#"><img src="assets/sb-user.svg" alt=""><span>Profil &amp; Keamanan Akun</span></a>
+      <a class="nav" href="#" data-go="login"><img src="assets/sb-logout.svg" alt=""><span>Keluar</span></a>
+      <div class="sb-userwrap"><div class="user-card"><div class="av">DP</div><div class="ut"><b>Dimas Prasetyo</b><span>Analis Hukum · Biro Hukum</span></div><img src="assets/sb-more.svg" width="16" height="16" alt=""></div></div>
+    </aside>
+
+    <div class="panel">
+      <header class="topbar">
+        <div class="crumb"><img src="assets/tb-apps.svg" width="16" height="16" alt=""><span>Portal Aplikasi</span><img src="assets/tb-chevron-right.svg" width="14" height="14" alt=""><b>Beranda</b></div>
+        <div class="gsearch"><img src="assets/tb-search.svg" width="15" height="15" alt=""><input type="text" placeholder="Cari aplikasi atau layanan…"><kbd>⌘ K</kbd></div>
+        <div class="bellbtn"><span class="ib"><img src="assets/tb-bell.svg" width="16" height="16" alt=""></span><img class="reddot" src="assets/tb-reddot.svg" alt=""></div>
+      </header>
+
+      <div class="content">
+        <!-- hero -->
+        <section class="hero">
+          <div class="hero-top">
+            <div class="hero-l">
+              <div class="pill"><img src="assets/hero-apps.svg" width="12" height="12" alt=""><span>SIMKARI — Portal Aplikasi</span></div>
+              <div style="height:34px"></div>
+              <p class="h1">Selamat pagi, Dimas.</p>
+              <p class="h1 grad">6 aplikasi siap Anda gunakan.</p>
+              <p class="hero-meta">Peran aktif: Analis Hukum · Biro Hukum, BPHN · Masuk melalui Layanan Identitas, 06 Nov 2026 07:52 WIB</p>
+            </div>
+            <div class="hero-r">
+              <div class="hero-actions">
+                <button class="ghost-btn" type="button"><img src="assets/hero-refresh.svg" width="15" height="15" alt=""></button>
+                <button class="white-btn" type="button"><img src="assets/hero-layers.svg" width="14" height="14" alt=""><span>Katalog aplikasi</span></button>
+              </div>
+              <div class="glass">
+                <div class="glass-h"><div><b>Terakhir diakses</b><span>Lanjutkan dari aplikasi terakhir</span></div><div class="gbadge"><img src="assets/hero-dot-green.svg" width="6" height="6" alt=""><em>3</em></div></div>
+                <div class="glass-row"><img src="assets/hero-dot-blue.svg" width="6" height="6" alt=""><p>SIMKARI Drive</p><em>3 jam lalu</em></div>
+                <div class="glass-row"><img src="assets/hero-dot-blue.svg" width="6" height="6" alt=""><p>JDIH Management</p><em>kemarin</em></div>
+                <div class="glass-row"><img src="assets/hero-dot-blue.svg" width="6" height="6" alt=""><p>Integration Workspace</p><em>3 hari lalu</em></div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><span class="ring"><img src="assets/stat-apps.svg" width="17" height="17" alt=""></span><div class="st"><span>Aplikasi tersedia</span><div><b>6</b><em>+1</em></div></div><img src="assets/stat-arrow.svg" width="16" height="16" alt=""></div>
+            <i class="vsep"></i>
+            <div class="stat"><span class="ring"><img src="assets/stat-star.svg" width="17" height="17" alt=""></span><div class="st"><span>Aplikasi favorit</span><div><b>2</b><em>—</em></div></div><img src="assets/stat-arrow.svg" width="16" height="16" alt=""></div>
+            <i class="vsep"></i>
+            <div class="stat"><span class="ring"><img src="assets/stat-send.svg" width="17" height="17" alt=""></span><div class="st"><span>Permohonan akses</span><div><b>1</b><em>diproses</em></div></div><img src="assets/stat-arrow.svg" width="16" height="16" alt=""></div>
+            <i class="vsep"></i>
+            <div class="stat"><span class="ring"><img src="assets/stat-bell.svg" width="17" height="17" alt=""></span><div class="st"><span>Notifikasi baru</span><div><b>3</b><em>+3</em></div></div><img src="assets/stat-arrow.svg" width="16" height="16" alt=""></div>
+          </div>
+          <div class="abs" style="left:520px;top:120px;width:620px;height:360px;z-index:5"><img class="inset-neg" style="inset:-38.89% -22.58%" src="assets/hero-glow.svg" alt=""></div>
+          <div class="abs" style="left:-80px;top:160px;width:380px;height:220px;z-index:4"><img class="inset-neg" style="inset:-54.55% -31.58%" src="assets/hero-glow2.svg" alt=""></div>
+          <div class="abs" style="left:372px;top:0;width:1px;height:260px;background:rgba(255,255,255,.05);z-index:3"></div>
+          <div class="abs" style="left:744px;top:0;width:1px;height:260px;background:rgba(255,255,255,.05);z-index:2"></div>
+          <img class="abs" style="left:330px;top:96px;width:420px;height:160px;z-index:1" src="assets/hero-dotgrid.svg" alt="">
+        </section>
+
+        <div class="main-row">
+          <div class="left-col">
+            <!-- Aplikasi saya -->
+            <div class="card">
+              <div class="card-head">
+                <div class="hd">
+                  <div class="ht"><em>APLIKASI SAYA</em><h3>Aplikasi untuk peran Analis Hukum</h3><p>Hanya aplikasi yang diizinkan untuk peran aktif yang tampil · ganti peran di sidebar</p></div>
+                  <div class="sort"><span>Urutkan: Terakhir dibuka</span><img src="assets/icon-chevron-down.svg" width="13" height="13" alt=""></div>
+                </div>
+                <div class="segment" id="seg">
+                  <button class="seg active" data-f="all"><b>Semua</b><i>6</i></button>
+                  <button class="seg" data-f="fav"><b>Favorit</b><i>2</i></button>
+                  <button class="seg" data-f="doc"><b>Dokumen &amp; arsip</b><i>2</i></button>
+                  <button class="seg" data-f="law"><b>Hukum</b><i>2</i></button>
+                  <button class="seg" data-f="hr"><b>Kepegawaian</b><i>1</i></button>
+                  <button class="seg" data-f="int"><b>Integrasi</b><i>1</i></button>
+                </div>
+              </div>
+              <div class="grid" id="appgrid">
+                <div class="app" data-cat="fav doc"><div class="top"><span class="code">SD</span><img class="star" src="assets/star-filled.svg" alt=""></div><div class="tx"><b>SIMKARI Drive</b><p>Penyimpanan berkas &amp; ruang kerja penyusunan</p></div><span class="acc full"><img src="assets/icon-check-blue.svg" width="11" height="11" alt="">Akses penuh</span><i class="hr"></i><div class="ft"><span class="info"><img src="assets/icon-info.svg" width="13" height="13" alt="">Info akses</span><span class="open">Buka <img src="assets/icon-arrow-right.svg" width="13" height="13" alt=""></span></div></div>
+                <a class="app" href="#" data-go="sso" data-cat="fav law"><div class="top"><span class="code">JM</span><img class="star" src="assets/star-filled.svg" alt=""></div><div class="tx"><b>JDIH Management</b><p>Pengelolaan dokumen &amp; informasi hukum</p></div><span class="acc full"><img src="assets/icon-check-blue.svg" width="11" height="11" alt="">Akses penuh</span><i class="hr"></i><div class="ft"><span class="info"><img src="assets/icon-info.svg" width="13" height="13" alt="">Info akses</span><span class="open">Buka <img src="assets/icon-arrow-right.svg" width="13" height="13" alt=""></span></div></a>
+                <div class="app" data-cat="int"><div class="top"><span class="code">IW</span><img class="star" src="assets/star-outline.svg" alt=""></div><div class="tx"><b>Integration Workspace</b><p>Pemantauan pengajuan integrasi aplikasi</p></div><span class="acc view"><img src="assets/icon-eye.svg" width="11" height="11" alt="">Lihat saja</span><i class="hr"></i><div class="ft"><span class="info"><img src="assets/icon-info.svg" width="13" height="13" alt="">Info akses</span><span class="open">Buka <img src="assets/icon-arrow-right.svg" width="13" height="13" alt=""></span></div></div>
+                <div class="app" data-cat="doc"><div class="top"><span class="code">EO</span><img class="star" src="assets/star-outline.svg" alt=""></div><div class="tx"><b>e-Office Sekretariat</b><p>Naskah dinas, disposisi &amp; surat keluar</p></div><span class="acc full"><img src="assets/icon-check-blue.svg" width="11" height="11" alt="">Akses penuh</span><i class="hr"></i><div class="ft"><span class="info"><img src="assets/icon-info.svg" width="13" height="13" alt="">Info akses</span><span class="open">Buka <img src="assets/icon-arrow-right.svg" width="13" height="13" alt=""></span></div></div>
+                <div class="app" data-cat="hr"><div class="top"><span class="code">SP</span><img class="star" src="assets/star-outline.svg" alt=""></div><div class="tx"><b>SIMPEG</b><p>Data kepegawaian &amp; riwayat jabatan pribadi</p></div><span class="acc view"><img src="assets/icon-eye.svg" width="11" height="11" alt="">Lihat saja</span><i class="hr"></i><div class="ft"><span class="info"><img src="assets/icon-info.svg" width="13" height="13" alt="">Info akses</span><span class="open">Buka <img src="assets/icon-arrow-right.svg" width="13" height="13" alt=""></span></div></div>
+                <div class="app" data-cat="law"><div class="top"><span class="code">PP</span><img class="star" src="assets/star-outline.svg" alt=""></div><div class="tx"><b>Portal Peraturan</b><p>Pencarian &amp; unduh peraturan perundang-undangan</p></div><span class="acc ltd"><img src="assets/icon-flag.svg" width="11" height="11" alt="">Terbatas · Wilayah Pusat</span><i class="hr"></i><div class="ft"><span class="info"><img src="assets/icon-info.svg" width="13" height="13" alt="">Info akses</span><span class="open">Buka <img src="assets/icon-arrow-right.svg" width="13" height="13" alt=""></span></div></div>
+              </div>
+            </div>
+
+            <!-- Katalog -->
+            <div class="card">
+              <div class="card-head nb">
+                <div class="hd">
+                  <div class="ht"><em>KATALOG APLIKASI</em><h3>Aplikasi lain yang dapat Anda ajukan</h3><p>Permohonan diperiksa pengelola aplikasi · rata-rata 2 hari kerja</p></div>
+                  <span class="lnk">LIHAT KATALOG <img src="assets/link-arrow.svg" width="13" height="13" alt=""></span>
+                </div>
+              </div>
+              <div class="divider"></div>
+              <div class="cat"><span class="cc">SR</span><div class="ct"><b>SRIKANDI Arsip</b><p>Kearsipan dinamis &amp; tata naskah elektronik</p></div><div class="co"><em>PEMILIK</em><p>Arsip Nasional RI</p></div><span class="btn-aj review"><img src="assets/icon-clock.svg" width="13" height="13" alt="">Dalam pemeriksaan</span></div>
+              <div class="cat"><span class="cc">SI</span><div class="ct"><b>SIPPN Terpadu</b><p>Pengelolaan data pelayanan publik lintas instansi</p></div><div class="co"><em>PEMILIK</em><p>Kementerian PANRB</p></div><button class="btn-aj" type="button"><img src="assets/icon-plus.svg" width="13" height="13" alt="">Ajukan akses</button></div>
+              <div class="cat"><span class="cc">DA</span><div class="ct"><b>Dasbor Analitik Hukum</b><p>Statistik produk hukum &amp; capaian Prolegnas</p></div><div class="co"><em>PEMILIK</em><p>BPHN</p></div><button class="btn-aj" type="button"><img src="assets/icon-plus.svg" width="13" height="13" alt="">Ajukan akses</button></div>
+              <div class="cat last"><span class="cc">EM</span><div class="ct"><b>e-Monev Prolegnas</b><p>Pemantauan &amp; evaluasi program legislasi nasional</p></div><div class="co"><em>PEMILIK</em><p>BPHN</p></div><button class="btn-aj" type="button"><img src="assets/icon-plus.svg" width="13" height="13" alt="">Ajukan akses</button></div>
+            </div>
+          </div>
+
+          <div class="right-col">
+            <div class="card pad-r">
+              <div class="hd pb16">
+                <div class="ht"><em>PERMOHONAN AKSES</em><h3>Status permohonan Anda</h3></div>
+                <span class="lnk">LACAK <img src="assets/link-arrow.svg" width="13" height="13" alt=""></span>
+              </div>
+              <div class="summary"><div><b>SRIKANDI Arsip</b><p>PRM-2026-0142 · diajukan 04 Nov 2026</p></div><span class="badge-p"><img src="assets/badge-eye-purple.svg" width="14" height="14" alt="">Dalam Pemeriksaan</span></div>
+              <div class="timeline">
+                <div class="step"><div class="rail"><span class="dot on"><img src="assets/tl-check.svg" width="11" height="11" alt=""></span><i class="ln on"></i></div><div class="tt"><b>Permohonan diajukan</b><p>04 Nov 2026, 10:12</p></div></div>
+                <div class="step"><div class="rail"><span class="dot on"><img src="assets/tl-check.svg" width="11" height="11" alt=""></span><i class="ln on"></i></div><div class="tt"><b>Verifikasi data pemohon</b><p>05 Nov 2026, 08:40</p></div></div>
+                <div class="step"><div class="rail"><img src="assets/tl-dot-active.svg" width="18" height="18" alt=""><i class="ln"></i></div><div class="tt"><b>Pemeriksaan pengelola aplikasi</b><p class="blue">Sedang berjalan · estimasi 07 Nov</p></div></div>
+                <div class="step"><div class="rail"><span class="dot off"></span></div><div class="tt dim"><span class="a">Keputusan &amp; aktivasi akses</span><span class="b">Menunggu</span></div></div>
+              </div>
+            </div>
+
+            <div class="card pad-n">
+              <div class="hd pn"><div class="ht"><em>NOTIFIKASI</em><h3>Terbaru untuk Anda</h3></div><span class="lnk">LIHAT SEMUA <img src="assets/link-arrow.svg" width="13" height="13" alt=""></span></div>
+              <div class="act"><div class="tm"><b>09:20</b><span>06 NOV</span></div><div class="am"><p>Sari Kusuma membagikan Matriks DIM RUU Perampasan Aset kepada Anda</p><span>SIMKARI DRIVE</span></div><span class="arr"><img src="assets/act-arrow.svg" width="13" height="13" alt=""></span></div>
+              <div class="act"><div class="tm"><b>08:40</b><span>05 NOV</span></div><div class="am"><p>Data pemohon PRM-2026-0142 (SRIKANDI Arsip) telah diverifikasi</p><span>PERMOHONAN AKSES</span></div><span class="arr"><img src="assets/act-arrow.svg" width="13" height="13" alt=""></span></div>
+              <div class="act"><div class="tm"><b>16:05</b><span>04 NOV</span></div><div class="am"><p>Akses JDIH Management Anda diperpanjang hingga 31 Des 2026</p><span>JDIH MANAGEMENT</span></div><span class="arr"><img src="assets/act-arrow.svg" width="13" height="13" alt=""></span></div>
+            </div>
+
+            <div class="announce">
+              <div class="ah"><img src="assets/icon-alert.svg" width="14" height="14" alt=""><em>PENGUMUMAN</em></div>
+              <b>Pemeliharaan terjadwal Layanan Identitas</b>
+              <p>Sabtu, 08 Nov 2026 pukul 22.00–23.00 WIB. Selama pemeliharaan, Anda tidak dapat masuk ke aplikasi SIMKARI.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="pfoot"><span>© 2026 SIMKARI · Portal Aplikasi v1.0</span><span class="ok"><i></i>Semua layanan berjalan normal</span></footer>
+    </div>
+  </div>
+</section>
+
+<script src="js/app.js"></script>
+</body>
+</html>
